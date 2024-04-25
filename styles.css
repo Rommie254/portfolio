@@ -1,14 +1,14 @@
 :root{
-    --primary: rgb(4, 210, 210);
+    --primary: rgb(3, 188, 188);
     --secondary: rgb(0, 40, 34);
     --bgDark: rgb(12, 12, 12);
+    --bgLight: rgb(255, 255, 255);
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: var(--bgDark);
 }
 
 header nav{
@@ -19,11 +19,11 @@ header nav{
     position: fixed;
     top: 0; 
     width: 100%;
-    background-color: var(--bgDark);
+    background-color: var(--bgLight);
     z-index: 1000;
     border-bottom: 2px solid darkcyan;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(91, 120, 122, 0.689); 
+    box-shadow: 0px 2px 10px 2px rgba(91, 120, 122, 0.689); 
 }
 
 .nav_items{
@@ -31,7 +31,7 @@ header nav{
 }
 
 header nav a{
-    color: white;
+    color: black;
     text-decoration: none;
     text-transform: uppercase;
     margin-right: 2rem;
@@ -87,7 +87,7 @@ body{
     flex: 1; 
     padding: 0px 20px;
     text-align: left;
-    color: white; 
+    color: black; 
     margin-left: 2rem;
     
 }
@@ -111,6 +111,89 @@ body{
     background: var(--primary);
     color: var(--secondary);
 }
+
+
+#contact {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    min-width: 280px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    padding: 10px;  
+    background-color: #f0f0f0;  
+    border-radius: 4px;  
+}
+
+.contact-info p {
+    margin: 0;  
+    font-size: 16px;  
+}
+
+.contact-info a {  
+    text-decoration: none;  
+    color: var(--primary);  
+}
+
+.contact-info a:hover {
+    text-decoration: underline;  
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: var(--primary); 
+    color: var(--secondary);  
+    border-radius: 4px;  
+    cursor: pointer;  
+    padding: 0.5rem 1rem;
+    outline: none;
+    font-weight: 600;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.center-button {  
+    text-align: center;
+}
+
+
+footer{ 
+    width: 100%;
+    background-color: var(--primary);
+    color: black;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 20px;
+}
+
 
 
 

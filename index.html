@@ -7,25 +7,67 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <!-- Navigation Links -->
     <header>
         <nav>
             <div class="nav_items">
-                <a href="#">Home</a>
-                <a href="#">About</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
                 <a href="#">Services</a>
-                <a href="#">Skills</a>
+                <a href="#skills">Skills</a>
             </div>
-            <button class="contact_button">Contact Me</button>
+            <button class="contact_button"><a href="#contact"> Contact Me </a></button>
         </nav>
     </header>
-    <div class="container">
+
+    <!--About-->
+    <div class="container" id="home">
         <img src="https://github.com/Rommie254/images/blob/main/ProfileImage.png?raw=true" alt="Profile" class="profile_img">
-        <div class="content">
+        <div class="content" id="about">
             <h6>Sharon Kilel</h6>
-            <h1>Graduate engineer & web developer</h1>
-            <p>I am passionate about creating beautiful and intuitive user experiences through web development. With a focus on front-end technologies and a keen eye for design, I strive to bring ideas to life in a digital world. Explore my projects and learn more about my skills and experiences.</p>
-            <button class="cv_button">MY CV</button>
+            <h1> Web developer and electrical engineer</h1>
+            <p>I am experienced in both front-end and back-end development. Skills include Python, Django, Dart, Flutter, HTML, CSS, JS, and SQL. </p>
+            <button class="cv_button">RESUME</button>
         </div>
     </div>
+
+     <!-- Contact Details -->
+    <div id="contact">
+        <h2>Contact Details</h2>
+        <div class="contact-info">  
+            <p><a href="mailto:sharonrommie@gmail.com">Email</a> || 
+                <a href="https://www.linkedin.com/in/sharon-kilel/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </p>
+          </div>
+        
+        <!-- Contact Form -->
+        <form class="form" action="#" method="post">              
+            <div class="form-container">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+            </div>
+        
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required class="textarea"></textarea>
+            </div>
+            
+            <div class="center-button">  
+                <button type="submit">Send Message</button>
+            </div>
+          </form>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy;2024. Sharon Kilel</p>
+    </footer>
 </body>
 </html>
